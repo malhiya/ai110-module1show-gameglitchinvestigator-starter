@@ -25,6 +25,7 @@ def parse_guess(raw: str):
             value = int(raw)
     except Exception:
         return False, None, "That is not a number."
+    #FIXME: Add Logic to check guess is in range (2)
 
     return True, value, None
 
@@ -34,6 +35,7 @@ def check_guess(guess, secret):
         return "Win", "🎉 Correct!"
 
     try:
+        #FIXME: Logic breaks here (1)
         if guess > secret:
             return "Too High", "📈 Go HIGHER!"
         else:
@@ -131,6 +133,7 @@ with col2:
 with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
+#FIXME: update game status to fix the New Game button functionality (3)
 if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(1, 100)
