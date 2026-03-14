@@ -72,10 +72,11 @@ with col2:
 with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
-#FIXME: update game status to fix the New Game button functionality (3)
+#FIX: update game status to fix the New Game button functionality (3)
 if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(1, 100)
+    st.session_state.status = "playing"
     st.success("New game started.")
     st.rerun()
 
@@ -98,10 +99,11 @@ if submit:
         st.session_state.history.append(guess_int)
 
         #FIXME: Remove str() cast — causes lexicographic comparison bug in check_guess (4)
-        if st.session_state.attempts % 2 == 0:
-            secret = str(st.session_state.secret)
-        else:
-            secret = st.session_state.secret
+        # if st.session_state.attempts % 2 == 0:
+        #     secret = str(st.session_state.secret)
+        # else:
+        #     secret = st.session_state.secret
+        secret = st.session_state.secret
 
         outcome, message = check_guess(guess_int, secret)
 
