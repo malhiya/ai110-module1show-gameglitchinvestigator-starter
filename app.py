@@ -97,6 +97,7 @@ if submit:
     else:
         st.session_state.history.append(guess_int)
 
+        #FIXME: Remove str() cast — causes lexicographic comparison bug in check_guess (4)
         if st.session_state.attempts % 2 == 0:
             secret = str(st.session_state.secret)
         else:
