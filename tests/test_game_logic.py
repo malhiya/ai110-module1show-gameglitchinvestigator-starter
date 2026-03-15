@@ -54,6 +54,12 @@ def test_hint_direction_not_swapped():
         "Guess too low should say Go HIGHER, not Go LOWER"
     )
 
+def test_parse_guess_rejects_floats():
+    # Floats should be rejected — all difficulty ranges use whole integers
+    ok, _, err = parse_guess("50.5")
+    assert ok == False
+    assert err is not None
+
 def test_parse_guess_out_of_range():
     # Bug fix (2) 
     # Guesses outside 1-100 should be rejected
