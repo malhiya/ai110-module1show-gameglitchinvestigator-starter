@@ -9,10 +9,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   (for example: "the hints were backwards").
 
 ---
-- (1) One thing I noticed when I played it the first time was that the hints kept telling me to go lower even though the secret number was higher than my guess. I also noticed that the hints seem to be the be more random and incorrect (for example: when the secret number is lower than my guess, it tells me to guess higher and another time it would correctly say to go lower). 
-- (2) the hints suggesting to go out of range. It hinted to go lower even when I inputted the lowest number allowed (1). It would be better to say go higher since it isn't possible to go lower (unless fractions are allowed). 
-- (3) The 'New Game' button does not work after you played the first. In order to play the game again, I have to refresh the whole page
-- The game also accepted negative numbers and numbers above 100. It would be better to have a out of bounds/ invalid input error, with a message saying to guess in the range
+(1) One thing I noticed when I played it the first time was that the hints kept telling me to go lower even though the secret number was higher than my guess. I also noticed that the hints seem to be the be more random and incorrect (for example: when the secret number is lower than my guess, it tells me to guess higher and another time it would correctly say to go lower). 
+(2) the hints suggesting to go out of range. It hinted to go lower even when I inputted the lowest number allowed (1). It would be better to say go higher since it isn't possible to go lower (unless fractions are allowed). 
+(3) The 'New Game' button does not work after you played the first. In order to play the game again, I have to refresh the whole page
+The game also accepted negative numbers and numbers above 100. It would be better to have a out of bounds/ invalid input error, with a message saying to guess in the range
 
 
 ## 2. How did you use AI as a teammate?
@@ -44,7 +44,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
--  I learned that Streamlit "reruns" happen every time you interact with your app, like clicking a button and the script runs from top to bottom again. I learned that session state is a way to remember values (user inputs) across reruns so you don’t lose them
+I learned that Streamlit "reruns" happen every time you interact with your app, like clicking a button and the script runs from top to bottom again. I learned that session state is a way to remember values (user inputs) across reruns so you don’t lose them
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -54,6 +54,6 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
-- One habit I would like to reuse is to always ask AI to explain something it bring up or points to if I don't understand it. This forces me to learn along the way and get a better understanding of the the code. 
-- One thing I would do differently is do a better job at haing different cchats open for each bug. I did this well, however, I would accidently ask it a random question once I thought I had a bug fixed.
-- I learned that AI generated code is very prone to make mistakes or change a small thing that can create a big error. It's important to write clear messages, ask questions, use your own understanding of CS, and double check the AI code before implementing it. 
+One habit I would like to reuse is to always ask AI to explain something it bring up or points to if I don't understand it. This forces me to learn along the way and get a better understanding of the the code. 
+One thing I would do differently is do a better job at haing different cchats open for each bug. I did this well, however, I would accidently ask it a random question once I thought I had a bug fixed.
+I learned that AI generated code is very prone to make mistakes or change a small thing that can create a big error. It's important to write clear messages, ask questions, use your own understanding of CS, and double check the AI code before implementing it. 
