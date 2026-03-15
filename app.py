@@ -69,7 +69,6 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 #FIX: update game status to fix the New Game button functionality (3)
-#FIX: reset game score to zero
 #FIX: reset attempts to 1 to match initialization and fix inconsistent attempt count
 if new_game:
     st.session_state.attempts = 1
