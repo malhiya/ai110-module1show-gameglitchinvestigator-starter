@@ -73,10 +73,12 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 #FIX: update game status to fix the New Game button functionality (3)
+#FIX: update game score to zero
 if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(1, 100)
     st.session_state.status = "playing"
+    st.session_state.score = 0
     st.success("New game started.")
     st.rerun()
 
