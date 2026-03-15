@@ -9,9 +9,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   (for example: "the hints were backwards").
 
 ---
-- One thing I noticed when I played it the first time was that the hints kept telling me to go lower even though the secret number was higher than my guess. I also noticed that the hints seem to be the be more random and incorrect (for example: when the secret number is lower than my guess, it tells me to guess higher and another time it would correctly say to go lower). 
-- A second issue are the hints suggesting to go out of range. It hinted to go lower even when I inputted the lowest number allowed (1). It would be better to say go higher since it isn't possible to go lower (unless fractions are allowed). 
-- A third issue is that the 'New Game' button does not work after you played the first. In order to play the game again, I have to refresh the whole page
+- (1) One thing I noticed when I played it the first time was that the hints kept telling me to go lower even though the secret number was higher than my guess. I also noticed that the hints seem to be the be more random and incorrect (for example: when the secret number is lower than my guess, it tells me to guess higher and another time it would correctly say to go lower). 
+- (2) the hints suggesting to go out of range. It hinted to go lower even when I inputted the lowest number allowed (1). It would be better to say go higher since it isn't possible to go lower (unless fractions are allowed). 
+- (3) The 'New Game' button does not work after you played the first. In order to play the game again, I have to refresh the whole page
 - The game also accepted negative numbers and numbers above 100. It would be better to have a out of bounds/ invalid input error, with a message saying to guess in the range
 
 

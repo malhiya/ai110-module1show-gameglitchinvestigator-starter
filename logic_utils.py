@@ -29,6 +29,7 @@ def parse_guess(raw: str):
     except Exception:
         return False, None, "That is not a number."
 
+    # FIX (2): added range check to reject guesses outside 1–100 using Claude Code
     if value < 1 or value > 100:
         return False, None, "Guess must be an integer between 1 and 100."
 
@@ -45,6 +46,8 @@ def check_guess(guess, secret):
         return "Win", "🎉 Correct!"
 
     try:
+        # FIX (1): Swapped hint messages so "Too High" directs the player lower and "Too Low" directs them higher.
+        # using Claude Code
         if guess > secret:
             return "Too High", "📉 Go LOWER!"
         else:
