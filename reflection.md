@@ -44,6 +44,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+-  I learned that Streamlit "reruns" happen every time you interact with your app, like clicking a button and the script runs from top to bottom again. I learned that session state is a way to remember values (user inputs) across reruns so you don’t lose them
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -52,3 +53,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+- One habit I would like to reuse is to always ask AI to explain something it bring up or points to if I don't understand it. This forces me to learn along the way and get a better understanding of the the code. 
+- One thing I would do differently is do a better job at haing different cchats open for each bug. I did this well, however, I would accidently ask it a random question once I thought I had a bug fixed.
+- I learned that AI generated code is very prone to make mistakes or change a small thing that can create a big error. It's important to write clear messages, ask questions, use your own understanding of CS, and double check the AI code before implementing it. 

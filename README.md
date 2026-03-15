@@ -25,13 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+- [X] Detail which bugs you found.
+- [X] Explain what fixes you applied.
+
+- The purpose of the game is for a player to guess a secret number between 1-100, receiving optional hints after each guess before the attempts run out. 
+
+- (1) Hint logic was inverted — told player to go lower when the secret was higher, and vice versa
+- (2) Hints suggested out-of-range guesses — e.g. "go lower" when the player already guessed 1
+- (3) The "New Game" button did not work after finishing a game — required a full page refresh to play again
+
+- (1) Swapped the hint conditional so guess > secret correctly returns "Go LOWER" and guess < secret returns "Go HIGHER"
+(2) Added input validation to reject guesses outside 1–100 and display a clear out-of-range error message
+(3) Reset session state (status and attempts) when the New Game button is pressed so the game restarts without a page refresh
+
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [X] ![Alt text](winning_screenshot.png)
 
 ## 🚀 Stretch Features
 
