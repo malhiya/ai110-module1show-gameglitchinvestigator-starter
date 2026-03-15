@@ -55,7 +55,7 @@ def test_hint_direction_not_swapped():
     )
 
 def test_parse_guess_rejects_floats():
-    # Floats should be rejected — all difficulty ranges use whole integers
+    #  Floats should be rejected — all difficulty ranges use whole integers
     ok, _, err = parse_guess("50.5")
     assert ok == False
     assert err is not None
