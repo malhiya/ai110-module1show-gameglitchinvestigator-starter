@@ -23,6 +23,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ---
 
+- I used Claude Code as an AI agent and ChatGPT to ask any logistical questions. 
+- One example of a correct suggestion was the high/low bug for the hints. Claude Code helpped find the logic where the bug was. I was able to verify the fix with my own understanding of python. I also played the game and used pytests to verify the work. 
+- One example of a misleading AI suggestion was when I asked how it would add the out of range check for numbers outside 1 and 100. The AI suggested going in app.py and changing the UI code. The solution was a bit confusing and I then responded by suggesting to add the check in the parse_guess function which it agreed with for a more simpler solution. I then verified the result by doing a pytest and playing the game again. I also tried to verify by asking if there could be any confilcts with the added code and somewhere else in the program, whihc the AI believed there wasn't (and it was true).
+
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
@@ -31,6 +35,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Did AI help you design or understand any tests? How?
 
 ---
+- I decided if a bug was really fixed if it passed the  pytest and also if I didn't notice ant errors when playing the game a few times. 
+
+- One test I ran using pytest was for the high/low hint bug. At first the test failed. And I was confused since playing the game didn't show any apparent errors. I then asked Claude Code what the error message meant and it explained how the it was comparing a tuple to a string. I then worked with the AI to fix the comparison and it worked. It showed what the return type of certain functions and actions and helped me parse it for the tests. 
+- AI helped me break down tests as they are a new topic for me. It helped me feel more comfortable with the syntax. 
 
 ## 4. What did you learn about Streamlit and state?
 
