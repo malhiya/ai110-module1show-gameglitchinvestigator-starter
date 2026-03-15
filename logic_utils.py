@@ -22,15 +22,15 @@ def parse_guess(raw: str):
         return False, None, "Enter a guess."
 
     try:
+        # FIX: reject floats entirely — only whole number integers are valid guesses
         if "." in raw:
-            value = int(float(raw))
-        else:
-            value = int(raw)
+            return False, None, "Guess must be a whole number."
+        value = int(raw)
     except Exception:
         return False, None, "That is not a number."
 
     if value < 1 or value > 100:
-        return False, None, "Guess must be between 1 and 100."
+        return False, None, "Guess must be an integer between 1 and 100."
 
     return True, value, None
 

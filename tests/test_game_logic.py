@@ -60,7 +60,9 @@ def test_parse_guess_out_of_range():
     ok_high, _, err_high = parse_guess("150")
     assert ok_high == False
     assert err_high is not None
+    assert "integer" in err_high.lower()
 
     ok_low, _, err_low = parse_guess("0")
     assert ok_low == False
     assert err_low is not None
+    assert "integer" in err_low.lower()
